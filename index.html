@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock,Scissor,Papper - Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Butcherman&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- navbar -->
+      <nav>
+        <h1 class="butcherman-regular" style="word-spacing: 7px">
+          Rocky Games
+        </h1>
+      </nav>
+
+      <!-- hero section -->
+      <div class="container">
+        <div class="screen">
+          <div class="scoreSide">
+            <span>
+              <h1 class="hanalei-fill-regular" style="color: aquamarine">
+                Computer
+              </h1>
+              <h1 class="hanalei-fill-regular" style="color: white">0</h1>
+            </span>
+            <span>
+              <h1 class="hanalei-fill-regular" style="color: rgb(239, 76, 76)">
+                1
+              </h1>
+            </span>
+            <span>
+              <h1 class="hanalei-fill-regular" style="color: antiquewhite">
+                Player
+              </h1>
+              <h1 class="hanalei-fill-regular" style="color: white">0</h1>
+            </span>
+          </div>
+          <div class="immediateResult">
+            <h1
+              style="color: white; text-align: center"
+              class="hanalei-fill-regular"
+            ></h1>
+          </div>
+          <div class="gestureSide">
+            <div id="computer-hand" class="hand">
+              <img src="./rock left.png" alt="rock-left" id="computer-rock" />
+            </div>
+            <div id="player-hand" class="hand">
+              <img src="./rock right.png" alt="rock-right" id="player-rock" />
+            </div>
+          </div>
+          <div class="instructionSide">
+            <button id="rock" style="background-color: antiquewhite">
+              Rock
+            </button>
+            <button id="paper">Paper</button>
+            <button
+              id="scissors"
+              style="background-color: rgb(236, 87, 87); color: white"
+            >
+              Scissors
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
